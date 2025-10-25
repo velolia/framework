@@ -9,9 +9,9 @@ class CommandLoader
     private string $commandsPath;
     private array $commands = [];
 
-    public function __construct(string $basePath)
+    public function __construct()
     {
-        $this->commandsPath = $basePath . '/system/Console/Commands';
+        $this->commandsPath = __DIR__ . '/Commands';
     }
 
     public function loadCommands(): array
