@@ -1,0 +1,13 @@
+<?php
+
+namespace {{namespace}};
+
+use Velolia\Http\Request;
+
+class {{class}} extends Controller
+{
+    public function index()
+    {
+        //
+    }
+}

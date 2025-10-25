@@ -1,0 +1,13 @@
+<?php
+
+namespace {{namespace}};
+
+use Velolia\Database\Seeders\Seeder;
+
+class {{class}} extends Seeder
+{
+    public function run(): void
+    {
+        //
+    }
+}
