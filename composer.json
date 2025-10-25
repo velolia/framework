@@ -20,5 +20,7 @@
         "psr-4": {
             "Velolia\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
