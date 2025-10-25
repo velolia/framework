@@ -332,7 +332,7 @@ abstract class Command
 
     private function getStubPath(string $stubName): string
     {
-        return getcwd() . '/system/Console/Commands/stubs/' . $stubName;
+        return __DIR__ . '/Commands/stubs/' . $stubName;
     }
 
     private function parseNameWithNamespace(string $name): array
