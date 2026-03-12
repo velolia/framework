@@ -46,7 +46,6 @@ class Application extends Container
         $this->register(\Velolia\Providers\DebugServiceProvider::class);
         $this->register(\Velolia\Providers\LogServiceProvider::class);
         $this->register(\Velolia\Providers\AuthServiceProvider::class);
-        $this->register(\Velolia\UltraWire\UltraWireServiceProvider::class);
     }
 
     public function register($provider, bool $force = false): ?ServiceProvider
@@ -135,3 +134,4 @@ class Application extends Container
         return $this->appKey;
     }
 }
+
