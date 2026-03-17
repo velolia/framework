@@ -32,7 +32,7 @@ class ServeCommand extends Command
         $publicPath = $this->app->basePath() . '/public';
 
         if ($daemon) {
-            $this->info("⚡Server starting in background at http://{$host}:{$port}");
+            $this->info("⚡ Server starting in background at http://{$host}:{$port}");
             $this->comment("Run 'php velo serve:stop --port={$port}' to stop it.");
             
             $command = "php -S {$host}:{$port} -t \"{$publicPath}\"";
@@ -46,7 +46,7 @@ class ServeCommand extends Command
             return 0;
         }
 
-        $this->info("⚡Server started at http://{$host}:{$port}");
+        $this->info("⚡ Server started at http://{$host}:{$port}");
         $this->comment("Press Ctrl+C to stop the server.");
         
         passthru("php -S {$host}:{$port} -t \"{$publicPath}\"");
